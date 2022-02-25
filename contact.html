@@ -22,15 +22,71 @@
       src="https://kit.fontawesome.com/f45f5c3b85.js"
       crossorigin="anonymous"
     ></script>
+     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <!-- Stylesheet -->
     <link rel="stylesheet" href="src/styles.css" />
     <title>Contact</title>
   </head>
 <body>
-   
-    
-
-    
+    <header>
+    <nav id="navbar">
+      <ul class="nav-list">
+        <li class="nav-links"><a href="index.html">home</a></li>
+        <li class="nav-links"><a href="about.html">about</a></li>
+      </ul>
+      <h2 id="logo">Ebi Kpemi-Ogokimi</h2>
+      <ul class="nav-list">
+        <li class="nav-links"><a href="projects.html">projects</a></li>
+        <li class="nav-links"><a href="contact.html">contact</a></li>
+      </ul>
+      <button class="hamburger"type="button">
+        <div class="bar"></div>
+      </button>
+    </nav>
+  </header>
+  <!-- Connecting the Navbar links -->
+ <nav class="mobile-nav">
+    <a href="index.html">home</a>
+    <a href="about.html">about</a>
+    <a href="projects.html">projects</a>
+    <a href="contact.html">contact</a>
+  </nav>
+  
+  <section class="contact-heading">
+    <h1>Contact Me</h1>
+    <div class="icons">
+      <i><a href="https://www.linkedin.com/in/ebi-kpemi-ogokimi/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></i>
+       <i><a href="https://mobile.twitter.com/lifewithebi" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a></i>
+        <i><a href="https://github.com/Ebi27" target="_blank"><ion-icon name="logo-github"></ion-icon></a></i>
+      <i><a href="mailto:kpemiogokimiebi@gmail.com"><ion-icon name="mail-outline"></ion-icon></a></i>
+    </div>
+  </section>
+  <section class="contact-container">
+    <form  method="POST" action="https://formsubmit.co/kpemiogokimiebi@gmail.com" method="POST">
+      <div class="inputs">
+        <input class="line" type="text" name="text" placeholder="Name" required>
+        <input class="line email" type="email" name="email" placeholder="Example@gmail.com" required>
+        <input class="line subject" type="text" name="subject" placeholder="Subject" required>
+      </div>
+      <textarea class="box message" type="text" name="message" placeholder="Message here..." required></textarea>
+      <input type="hidden" name="_next" value="thankyou.html"> <!--Add website link here-->
+    </section>
+    <section class="button-section">
+      <button class="send-button onclic validate" type="submit">Send</button>
+    </form>
+  </section>
+      <!-- Links to my social media pages -->
+   <div class="connect">
+      <p>Connect with Me</p>
+      <hr>
+    </div>
+    <div class="social-media">
+      <i><a href="https://github.com/Ebi27" target="_blank"><ion-icon name="logo-github"></ion-icon></a></i>
+      <i><a href="https://www.linkedin.com/in/ebi-kpemi-ogokimi/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></i>
+      <i><a href="mailto:kpemiogokimiebi@gmail.com"><ion-icon name="mail-outline"></ion-icon></a></i>
+    </div>
+  </footer>
      <!--JavaScript File Link-->
     <script type="text/javascript" src="src/index.js"></script>
 </body>
