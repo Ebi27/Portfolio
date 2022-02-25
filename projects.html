@@ -22,16 +22,84 @@
       src="https://kit.fontawesome.com/f45f5c3b85.js"
       crossorigin="anonymous"
     ></script>
+     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <!-- Stylesheet -->
     <link rel="stylesheet" href="src/styles.css" />
     <title>Projects</title>
   </head>
 <body>
-    
-
-
-
-    
+    <header>
+    <nav id="navbar">
+      <ul class="nav-list">
+        <li class="nav-links"><a href="index.html">home</a></li>
+        <li class="nav-links"><a href="about.html">about</a></li>
+      </ul>
+      <h2 id="logo">Ebi Kpemi-Ogokimi</h2>
+      <ul class="nav-list">
+        <li class="nav-links"><a href="projects.html">projects</a></li>
+        <li class="nav-links"><a href="contact.html">contact</a></li>
+      </ul>
+      <button class="hamburger"type="button">
+        <div class="bar"></div>
+      </button>
+    </nav>
+  </header>
+ <!-- Connecting the Navbar links -->
+ <nav class="mobile-nav">
+    <a href="index.html">home</a>
+    <a href="about.html">about</a>
+    <a href="projects.html">projects</a>
+    <a href="contact.html">contact</a>
+  </nav>
+<section class="projects">
+    <h1 class="project-title">Projects</h1>
+    <div class="project-container">
+      <div class="back-button back">
+        <span class="angle-back"><ion-icon name="chevron-back-outline"></ion-icon></span>
+      </div>
+      <div id="project-images">
+        <img src="portf/WeatherProject.docx" alt="Weather App">
+        <div class="project-buttons hidden-buttons">
+          <button  class="live-button" type="button"><a class="live" target="_blank" href="https://weather-ebi-app.netlify.app/">View Live</a></button>
+          <button class="code-button" type="button"><a target="_blank" href="https://github.com/Ebi27/Weather-app">View Code</a></button>
+        </div>
+<img src="portf/krakowLandingPage.png" alt="Krakow Landing Page">
+        <div class="project-buttons hidden-buttons">
+          <button  class="live-button" type="button"><a class="live" target="_blank" href="https://krakowcityguide.netlify.app/">View Live</a></button>
+          <button class="code-button" type="button"><a target="_blank" href="https://github.com/Ebi27/Krakow-City-Guide-Landing-Page">View Code</a></button>
+        </div>
+        <img src="portf/Museum-of-Candy.png" alt="Museum of Candy">
+        <div class="project-buttons hidden-buttons">
+          <button  class="live-button" type="button"><a class="live" target="_blank" href="https://museum-of-candy-by-ebi.netlify.app/">View Live</a></button>
+          <button class="code-button" type="button"><a target="_blank" href="https://github.com/Ebi27/Museum_of_Candy">View Code</a></button>
+        </div>
+        <img src="portf/guessing-game.png" alt="Guessing game"> 
+        <div class="project-buttons hidden-buttons">
+          <button  class="live-button" type="button"><a class="live" target="_blank" href="#">View Live</a></button> <!--Add website link-->
+          <button class="code-button" type="button"><a target="_blank" href="https://github.com/Ebi27/Number-Guessing-Game ">View Code</a></button>
+        </div>
+      </div>
+      <div class="next-button next">
+        <span class="angle-forward"><ion-icon name="chevron-forward-outline"></ion-icon></span>
+      </div>
+    </div>
+    <div class="project-buttons main-buttons">
+      <button  class="live-button" type="button"><a class="live" target="_blank" href="https://github.com/Ebi27">View Live</a></button>
+      <button class="code-button" type="button"><a target="_blank" href="https://github.com/Ebi27 ">View Code</a></button>
+    </div>
+    </section>
+   <!-- Links to my social media pages -->
+   <div class="connect">
+      <p>Connect with Me</p>
+      <hr>
+    </div>
+    <div class="social-media">
+      <i><a href="https://github.com/Ebi27?tab=repositories" target="_blank"><ion-icon name="logo-github"></ion-icon></a></i>
+      <i><a href="https://www.linkedin.com/in/ebi-kpemi-ogokimi/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></i>
+      <i><a href="mailto:kpemiogokimiebi@gmail.com"><ion-icon name="mail-outline"></ion-icon></a></i>
+    </div>
+  </footer>
      <!--JavaScript File Link-->
     <script type="text/javascript" src="src/index.js"></script>
 </body>
