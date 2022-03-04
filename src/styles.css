@@ -10,6 +10,245 @@ html {
 body {
   background: linear-gradient(to top, #f0ece9ba, #b3a196cc ), url(https://images.unsplash.com/photo-1566305977571-5666677c6e98?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTc1fHxwYXR0ZXJufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60)no-repeat top center;
   background-size: cover;
-  /* background: linear-gradient(100deg,#f0ece9 30%, #b3a196); */
   font-family: 'Montserrat', sans-serif;
+}
+header {
+  min-width: 500px;
+  width: 100%;
+  position: sticky; top: 0; /* keeping the header fixed to the top*/
+  background-color: #FFFFFC;
+  padding: 1.2em 0;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
+  z-index: 2;
+}
+#navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav-list {
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+}
+.nav-links {
+  display: inline-block;
+  list-style: none;
+  font-size: 1em;
+  transition: all .6s;
+}
+.nav-links:hover {
+  transform: translateY(-5px);
+}
+.nav-links > a {
+  text-decoration: none;
+  color:#122932;
+  font-family: 'Poiret One', sans-serif;
+  text-transform: uppercase;
+  transition: all 2s;
+}
+.nav-links > a:hover {
+  text-decoration: overline;
+  text-decoration-thickness: .01em;
+  text-shadow: 0 2px 10px rgb(0 0 0 / 0.4);
+}
+#logo {
+  display: inline-block;
+  color:#95818d;
+  font-family: 'The Nautigal', cursive;
+  font-size: 4em;
+  font-size:54px;
+}
+/* HAMBURGER HAMBURGER HAMBURGER HAMBURGER HAMBURGER HAMBURGER */
+.hamburger {
+  position: relative;
+  display: block;
+  width: 35px;
+  cursor: pointer;
+  background: none;
+  outline: none;
+  border: none;
+}
+.hamburger .bar, .hamburger:after, .hamburger:before {
+  content: '';
+  display: block;
+  height: 1px;
+  background-color: black;
+  margin: 9px 0px;
+  transition: all 0.9s;
+}
+.hamburger:before {
+  width: 80%;
+}
+.hamburger .bar{
+  width: 90%;
+}
+.hamburger:after {
+  width: 100%;
+}
+.hamburger.is-active:before {
+  width: 100%;
+  transform: rotate(-45deg) translate(-8px, 5px);
+}
+.hamburger.is-active:after {
+  transform: rotate(45deg) translate(-10px, -7px);
+}
+.hamburger.is-active .bar {
+  opacity: 0;
+}
+.mobile-nav {
+  display: block;
+  top: 0;
+  left: 100%;
+  position: fixed;
+  width: 50%;
+  min-height: 100vh;
+  z-index: 1;
+  background-color: #95818d;
+  opacity: .9;
+  padding-top: 120px;
+  box-shadow: 0 3px 10px rgba(0 0 0 / 0.7);
+}
+.mobile-nav.is-active {
+  left: 50%;
+  transition: 0.6s ease;
+}
+.mobile-nav > a {
+  display: block;
+  text-align: center;
+  width: 100%;
+  font-size: 5vw;
+  /* max-width: 200px; */
+  margin: 20px auto;
+  padding: 12px 16px;
+  background-color: #95818d;
+  color: #FFFFFC;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.mobile-nav > a:hover {
+  background-color: #99868f;
+  text-shadow: 0 3px 10px rgba(0 0 0 / 0.7);
+}
+/* END OF HAMBURGER END OF HAMBURGER END OF HAMBURGER */
+#welcome-section {
+  width: 80%;
+  margin: 8vw auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#greeting-area {
+  width: 100%;
+  margin: 3vw 0;
+  display: flex;
+  flex-direction: column;
+}
+#greeting-area > h1 {
+  font-size: 7em;
+  font-weight: 100;
+  margin-bottom: 8%;
+  text-shadow: 5px 6px 6px rgb(255 255 255 / 0.9);
+  letter-spacing: 1vw;
+  animation: fadeInLeft2 3s 1;
+}
+.name {
+  font-size: 3rem;
+  font-weight: 100;
+  margin-bottom: 2%;
+  animation: fadeInLeft2 3s 1;
+}
+.description {
+  font-size: 1.7rem;
+  font-weight: 100;
+  animation: fadeInLeft2 3s 1;
+}
+.empty > img{
+  float: right;
+  width: 70%;
+  margin-right: 4vw;
+  border-radius: 1%;
+  box-shadow: 0 4px 10px rgb(0 0 0 / 0.5);
+  transform: rotate(10deg);
+  animation: fadeInLeft 3s 1;
+}
+.about-section {
+  width: 80%;
+  margin: 5vw auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 100;
+  background-color: #95818d;
+  opacity: .9;
+  border-radius: 5%;
+  box-shadow: 0 4px 10px rgb(0 0 0 / 0.5);
+}
+.about {
+  margin-top: 4vw;
+  width: 80%;
+  text-align: center;
+}
+.about > h2 {
+  font-size: 5.5vw;
+  font-weight: 200;
+  color: #470024;
+  margin-bottom: 1vw;
+  text-shadow: 0 3px 10px rgba(0 0 0/ 0.5);
+  animation: fadeInLeft2 3s 1;
+}
+.about > p {
+  font-size: 25px;
+  margin-bottom: 3em;
+  color: #FFFFFC;
+}
+.about > p > a {
+  color: #470024;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all .5s ;
+}
+.about > p > a:hover {
+  color: #FFFFFC;
+}
+.about-section > h3 {
+  font-size: 35px;
+  margin: 0 0 5% 0;
+  font-weight: 100;
+  padding: 0 5vw 2vw 5vw;
+  border-bottom: 1px solid #FFFFFC;
+  color: #FFFFFC;
+  text-shadow: 0 3px 10px rgba(0 0 0/ 0.5);
+}
+footer {
+  width: 100%;
+  background-color:#FFFFFC;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 10px rgb(0 0 0 / 0.5);
+  bottom: 0px;
+}
+.connect {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 1%;
+  text-shadow: 0 2px 10px rgb(0 0 0 / 0.2);
+}
+hr {
+  width: 30%;
+  margin: 1.5% auto;
+}
+.social-media {
+  margin: 0 auto;
+}
+.social-media > i > a > ion-icon {
+  font-size: 2.5em;
+  color: #470024;
+  margin: 0 2vw;
+  cursor: pointer;
+  transition: all .5s;
+}
+ion-icon:hover {
+  transform: scale(1.2, 1.2);
 }
