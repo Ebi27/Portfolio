@@ -57,7 +57,7 @@ header {
   color:#95818d;
   font-family: 'The Nautigal', cursive;
   font-size: 4em;
-  font-size:50px;
+  font-size:40px;
 }
 /* HAMBURGER HAMBURGER HAMBURGER HAMBURGER HAMBURGER HAMBURGER */
 .hamburger {
@@ -518,4 +518,27 @@ form{
   /* padding: 2px; */
   box-shadow: 0 5px 10px rgb(0 0 0 /.3);
   transition: all .8s ease;
+}
+/* KeyFrames KeyFrames KeyFrames KeyFrames */
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-4vw);
+    transform: rotate(0deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(4vw);
+    transform: rotate(10deg);
+  }
+}
+@keyframes fadeInLeft2 {
+  0% {
+    opacity: 0;
+    transform: translateX(-4vw);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0vw);
+  }
 }
