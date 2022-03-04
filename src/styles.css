@@ -57,7 +57,7 @@ header {
   color:#95818d;
   font-family: 'The Nautigal', cursive;
   font-size: 4em;
-  font-size:54px;
+  font-size:50px;
 }
 /* HAMBURGER HAMBURGER HAMBURGER HAMBURGER HAMBURGER HAMBURGER */
 .hamburger {
@@ -315,6 +315,7 @@ ion-icon:hover {
 .resume-list >ion-icon:hover {
   transform: scale(1, 1);
 }
+
 .resume-button:hover {
   /* transform: scale(1.1, 1.1); */
   transform: translateY(-10px);
