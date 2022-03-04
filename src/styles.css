@@ -322,7 +322,7 @@ ion-icon:hover {
   color: #FFFFFC;
   box-shadow: 0 10px 10px rgb(0 0 0 /.7);
 }
-/* CONTACT PAGE  */
+/* CONTACT PAGE */
 .contact-heading{
   display: flex;
   justify-content: center;
@@ -412,4 +412,109 @@ form{
   transform: scale(1.1);
   opacity: .8;
   box-shadow: 0 10px 10px rgb(0 0 0 /.7);
+}
+/* PROJECTS PAGE */
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.project-title {
+  color: #FFFFFC;
+  font-size: 8vw;
+  font-weight: 200;
+  padding: 2vw ;
+  border-bottom: 1px solid #999999;
+  text-shadow: 5px 6px 8px rgb(255 255 255 / 0.9);
+  animation: fadeInLeft2 3s 1;
+}
+.project-container {
+  width: 85vw;
+}
+#project-images {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+#project-images > img {
+  border-radius: 3px;
+  width: 90%;
+  margin: 6% 4%;
+  filter: grayscale(75%);
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
+  border-width:4vw ;
+  border-style:dotted ;
+  border-image-source: linear-gradient( to bottom, #f7f2e9, #e6e3df);
+  display: none;
+  transition: all 1s ease-out;
+  /* align-self: center; */
+}
+#project-images > img:first-of-type {
+  display: block;
+}
+#project-images > img:hover {
+  filter: grayscale(0);
+}
+.project-container {
+  display: flex;
+  align-items: center;
+}
+.project-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.project-buttons > button {
+  margin: 2vw 3vw 30vw 3vw;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / .3);
+  background-color: #95818d;
+  color: #FFFFFC;
+  font-family: 'Montserrat', cursive;
+  font-size: 1.5vw;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+.live-button > a {
+  text-decoration: none;
+  color: #FFFFFC;
+  display: block;
+  padding: 2vw 4vw;
+  cursor: pointer;
+}
+.code-button > a {
+  text-decoration: none;
+  color: #FFFFFC;
+  display: block;
+  padding: 2vw 4vw;
+  cursor: pointer;
+}
+.project-buttons > button:hover {
+  transform: scale(1.1,1.1);
+  opacity: .7;
+}
+.hidden-buttons {
+  display: none !important;
+}
+.next-button, .back-button {
+  display: inline;
+  cursor: pointer;
+}
+.angle-forward > ion-icon{
+  font-size: 70px;
+  color: #95818d;
+  /* padding: 2px; */
+  box-shadow: 0 5px 10px rgb(0 0 0 /.3);
+  transition: all .8s ease;
+}
+.angle-back > ion-icon {
+  font-size: 70px;
+  color: #95818d;
+  /* padding: 2px; */
+  box-shadow: 0 5px 10px rgb(0 0 0 /.3);
+  transition: all .8s ease;
 }
