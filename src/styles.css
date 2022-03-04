@@ -252,3 +252,73 @@ hr {
 ion-icon:hover {
   transform: scale(1.2, 1.2);
 }
+/* ABOUT PAGE AND RESUME */
+.resume {
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.resume-details {
+  margin: 5% 5%;
+  padding: 3vw;
+  background-color: #f0ece9;
+  opacity: .7;
+  border-radius: 2%;
+  box-shadow: 0 4px 10px rgb(0 0 0 / 0.5);
+  text-align: center;
+}
+.section1 {
+  padding: 4vw;
+  margin: 0 10vw;
+}
+.section2 {
+  width: 30%;
+}
+.section3 {
+  width: 30%;
+}
+.resume-titles {
+  font-size: 1.7rem;
+  margin-bottom: 1.5vw;
+}
+.resume-list {
+  list-style: none;
+  margin: 15px;
+  font-size: 20px;
+}
+.resume-list > img {
+  width: 20px;
+}
+.button-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4vw auto;
+}
+.resume-button {
+  padding: 1vw 3vw;
+  border-radius: 20px;
+  background-color: #FFFFFC ;
+  color: #470024;
+  font-size: 2vw;
+  font-family: 'Montserrat', cursive;
+  opacity: .7;
+  box-shadow: 0 4px 10px rgb(0 0 0 / 0.5);
+  cursor: pointer;
+  transition: all .5s;
+}
+.resume-button >span {
+  font-size: 1.2vw;
+}
+.resume-list >ion-icon:hover {
+  transform: scale(1, 1);
+}
+.resume-button:hover {
+  /* transform: scale(1.1, 1.1); */
+  transform: translateY(-10px);
+  background-color: #95818d;
+  color: #FFFFFC;
+  box-shadow: 0 10px 10px rgb(0 0 0 /.7);
+}
