@@ -542,3 +542,173 @@ form{
     transform: translateX(0vw);
   }
 }
+
+/* Media Queries Media Queries Media Queries Media Queries */
+@media (min-width:800px) {
+  .mobile-nav {
+    display: none;
+  }
+  .hamburger {
+    display: none;
+  }
+}
+@media (max-width:1330px) {
+  .resume {
+    flex-direction: column;
+  }
+  .resume-details {
+    padding: 3vw;
+    margin: 2vw 0vw;
+    width: 95%;
+  }
+  .section3 {
+    margin-bottom: 5vw;
+  }
+  .contact-heading > h1 {
+    font-size: 5.5em;
+  }
+  .line {
+    width: 90vw;
+    height: 7vw;
+  }
+  .box {
+    width: 90vw;
+    height:45vw;
+  }
+  .send-button {
+    margin-bottom: 6vw;
+  }
+}
+@media (max-width: 1000px) {
+  .send-button{
+    margin-bottom: 8vw;
+  }
+  #start-button {
+    font-size: 25px;
+  }
+  #submit {
+    font-size: 25px;
+  }
+  .resume-button {
+    font-size: 20px;
+  }
+  .resume-button >span {
+    font-size: 13px;
+  }
+}
+@media (max-width: 800px) {
+  .nav-list {
+    display: none;
+  }
+  #logo {
+    font-size: 2.5em;
+  }
+  #welcome-section {
+    width: 80%;
+    margin: 4vw auto;
+    transition: all 1s ease;
+    flex-direction: column;
+  }
+  #greeting-area > h1 {
+    font-size: 12vw;
+    text-align: center;
+    margin-bottom: 2vw;
+  }
+  .name {
+    font-size: 6.5vw;
+    font-weight: 200;
+    margin-bottom: 2%;
+    text-align: center;
+  }
+  .description {
+    font-size: 3.5vw;
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 3vw;
+  }
+  .empty > img{
+    width: 100%;
+    margin: 0 0 5vw 0;
+    transform: rotate(0deg);
+    animation: none;
+  }
+  .about-section {
+    border-radius: 1%;
+    margin-bottom: 5vw;
+    width: 90%;
+  }
+  .about > h2 {
+    font-size: 3.5rem;
+  }
+  .popup-quiz > a{
+    font-size: 3.5rem;
+  }
+  .about > p {
+    font-size: 20px;
+    font-weight: 200;
+  }
+  #hobbies {
+    flex-direction: column;
+  }
+  .images {
+    width: 60vw;
+  }
+  .images > img {
+    max-height: 40vw;
+  }
+  .image-text {
+    font-size: 4.5vw;
+    margin-top: .5vw;
+  }
+  .resume-button {
+    padding: 2vw 3vw;
+    font-size: 3vw;
+    margin-bottom: 3vw;
+  }
+  .contact-heading {
+    flex-direction: column;
+  }
+  .contact-heading > h1 {
+    text-align: center;
+    border-bottom: 1px solid #888888;
+    border-right: none;
+  }
+  .icons {
+    flex-direction: row;
+    margin-top: 3vw;
+  }
+  .line {
+    width: 90vw;
+    height: 7vw;
+  }
+  .box {
+    width: 90vw;
+    height:45vw;
+  }
+  .send-button{
+    margin-bottom: 10vw;
+  }
+  .project-title {
+    font-size: 4.5rem;
+  }
+  #project-images > img {
+    width: 100%;
+    margin: 10%;
+    border: none;
+    display: block !important;
+  }
+  .project-buttons > button {
+    border: none;
+    margin: 4vw 3vw 15vw 3vw;
+    font-size: 15px;
+  }
+  .next-button, .back-button {
+    display: none;
+  }
+  .hidden-buttons {
+    display: block !important;
+  }
+  .main-buttons {
+    display: none;
+  }
+}
